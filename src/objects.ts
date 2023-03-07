@@ -90,7 +90,7 @@ export function toMarkdown(question: Question): string {
     let md = "# " + question.name + "\n" + question.body + "\n";
     question.type === "multiple_choice_question"
         ? "\n" +
-          question.options.map((option: any) => (md += "- " + option + "\n"))
+          question.options.map((option: string) => (md += "- " + option + "\n"))
         : "";
     return md.trim();
 }
