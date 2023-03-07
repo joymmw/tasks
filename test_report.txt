@@ -6,20 +6,25 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/arrays.test.ts
+PASS src/objects.test.ts
 PASS src/HtmlCss.test.tsx
 PASS src/functions.test.ts
 PASS src/App.test.tsx
---------------|---------|----------|---------|---------|-------------------
-File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
---------------|---------|----------|---------|---------|-------------------
-All files     |     100 |      100 |     100 |     100 |                   
- App.tsx      |     100 |      100 |     100 |     100 |                   
- arrays.ts    |     100 |      100 |     100 |     100 |                   
- functions.ts |     100 |      100 |     100 |     100 |                   
---------------|---------|----------|---------|---------|-------------------
+----------------|---------|----------|---------|---------|-------------------
+File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------|---------|----------|---------|---------|-------------------
+All files       |   98.91 |    97.77 |     100 |   98.83 |                   
+ src            |   98.91 |    97.77 |     100 |   98.83 |                   
+  App.tsx       |     100 |      100 |     100 |     100 |                   
+  arrays.ts     |     100 |      100 |     100 |     100 |                   
+  functions.ts  |     100 |      100 |     100 |     100 |                   
+  objects.ts    |   96.29 |       90 |     100 |   96.29 | 58                
+ src/interfaces |       0 |        0 |       0 |       0 |                   
+  question.ts   |       0 |        0 |       0 |       0 |                   
+----------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 4 passed, 4 total
-Tests:       22 passed, 22 total
+Test Suites: 5 passed, 5 total
+Tests:       32 passed, 32 total
 Snapshots:   0 total
-Time:        4 s
+Time:        5.546 s
 Ran all test suites.
