@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
@@ -30,9 +31,9 @@ export function TwoDice(): JSX.Element {
                     <div>You Lose!</div>
                 ) : d1 === d2 ? (
                     <div>You Win!</div>
-                ) : (
+                ) : 
                     ""
-                )}
+                }
             </span>
         </span>
     );
