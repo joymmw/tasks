@@ -3,5 +3,23 @@ import { Button } from "react-bootstrap";
 import { QuestionType } from "../interfaces/question";
 
 export function ChangeType(): JSX.Element {
-    return <div>Change Type</div>;
+    // eslint-disable-next-line prefer-const
+    let [qType, changeType] = useState<QuestionType>("short_answer_question");
+
+    function changeQuestion(): void {
+        changeType(
+            qType === "multiple_choice_question"
+                ? (qType = "short_answer_question")
+                : (qType = "multiple_choice_question")
+        );
+    }
+
+    // Only includes <div>42</div> if `visible` is true
+    return (
+        <div>
+            <Button onClick={changeQuestion}>Change Type</Button>
+            {qType === "multiple_choice_question" && <div>Multiple Choice</div>}
+            {qType === "short_answer_question" && <div>Short Answer</div>}
+        </div>
+    );
 }
