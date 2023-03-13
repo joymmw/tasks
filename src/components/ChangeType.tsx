@@ -7,11 +7,9 @@ export function ChangeType(): JSX.Element {
     let [qType, changeType] = useState<QuestionType>("short_answer_question");
 
     function changeQuestion(): void {
-        changeType(
-            qType === "multiple_choice_question"
-                ? (qType = "short_answer_question")
-                : (qType = "multiple_choice_question")
-        );
+        qType === "multiple_choice_question"
+            ? changeType("short_answer_question")
+            : changeType("multiple_choice_question");
     }
 
     // Only includes <div>42</div> if `visible` is true
