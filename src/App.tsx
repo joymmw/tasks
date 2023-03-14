@@ -21,9 +21,10 @@ function App(): JSX.Element {
                 World from UD
             </header>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
+            <DoubleHalf></DoubleHalf>
             <hr></hr>
-            <ChooseTeam></ChooseTeam>
+
+            {/* <ChooseTeam></ChooseTeam>
             <hr></hr>
             <ColoredBox></ColoredBox>
             <hr></hr>
@@ -39,7 +40,7 @@ function App(): JSX.Element {
             <hr />
             <ChangeType></ChangeType>
             <hr />
-            <CycleHoliday></CycleHoliday>
+            <CycleHoliday></CycleHoliday> */}
         </div>
     );
 }
