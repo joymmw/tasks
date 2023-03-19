@@ -24,7 +24,7 @@ function App(): JSX.Element {
             <DoubleHalf></DoubleHalf>
             <hr></hr>
 
-            {/* <ChooseTeam></ChooseTeam>
+            <ChooseTeam></ChooseTeam>
             <hr></hr>
             <ColoredBox></ColoredBox>
             <hr></hr>
@@ -40,7 +40,7 @@ function App(): JSX.Element {
             <hr />
             <ChangeType></ChangeType>
             <hr />
-            <CycleHoliday></CycleHoliday> */}
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
