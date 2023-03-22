@@ -39,7 +39,8 @@ function App(): JSX.Element {
                 expectedAnswer="b"
             ></MultipleChoiceQuestion>
             <hr></hr>
-            <CheckAnswer expectedAnswer="42"></CheckAnswer>
+
+            {/* <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
             <GiveAttempts></GiveAttempts>
             <hr></hr>
@@ -51,7 +52,7 @@ function App(): JSX.Element {
                 options={["a", "b", "c"]}
                 expectedAnswer="b"
             ></MultipleChoiceQuestion>
-            <hr></hr>
+            <hr></hr> */}
             <DoubleHalf></DoubleHalf>
             <hr></hr>
 
