@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, FormGroup } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
 export function ChangeColor(): JSX.Element {
     const [color, setColor] = useState<string>("red");
